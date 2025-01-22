@@ -1,0 +1,340 @@
+/* --- Seção Header e Video ---*/
+header {
+  position: relative;
+  background-color: black;
+  height: 100vh; /* Ajustado para 100vh para cobrir toda a altura da tela */
+  overflow: hidden;
+}
+
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(-50px); /* Inicialmente posicionado acima */
+  transition: opacity 1s ease, transform 1s ease; /* Transição de 2 segundos */
+}
+
+.animate-on-scroll.show {
+  opacity: 1;
+  transform: translateY(0); /* Posição final após a animação */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 1;
+    transform: translateY(-180px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+header video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Faz o vídeo cobrir completamente o contêiner mantendo a proporção */
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
+
+header .container {
+  position: relative;
+  z-index: 2;
+  animation: fadeIn 2s ease-in-out forwards;
+}
+
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+/* Media Query for devices withi coarse pointers and no hover functionality */
+
+/* This will use a fallback image instead of a video for devices that commonly do not support the HTML5 video element */
+
+/* @media (pointer: coarse) and (hover: none) {
+	header {
+		background: url("https://source.unsplash.com/XT5OInaElMw/1600x900") black
+			no-repeat center center scroll;
+	}
+
+	header video {
+		display: none;
+	}
+} */
+
+/* --- Seção Main */
+
+main {
+  background: none;
+}
+
+/* --- Seção Nav Bar ---  */
+.navbar-nav .nav-item .nav-link {
+  color: #fff;
+  opacity: 80%;
+}
+
+.navbar-nav .nav-item .nav-link.active {
+  color: #28a745; /* Altera a cor do item ativo */
+  position: relative; /* Permite posicionar a barra */
+}
+
+.navbar-nav .nav-item .nav-link.active::after {
+  content: '';
+  position: absolute;
+  bottom: -3px; /* Distância da barra em relação ao texto */
+  left: 9px;
+  width: 50%;
+  height: 2px; /* Altura da barra */
+  background-color: #28a745; /* Cor da barra */
+  transition: 0.5s; /* Adiciona uma transição suave */
+}
+
+.navbar-nav .nav-item .nav-link.active:hover::after {
+  width: 75%; /* Amplia a largura da barra ao passar o mouse */
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+  color: #28a745; /* Altera a cor do texto ao passar o mouse */
+  transition: color 0.7s; /* Adiciona uma transição suave */
+}
+
+/* --- Seção Recursos --- */
+.recursos {
+  padding: 7rem;
+  background: #343a40;
+}
+
+.recursos h2 {
+  color: #28a745;
+}
+
+.recursos h3 {
+  color: #28a745;
+}
+
+.recursos p {
+  color: white;
+}
+
+/* --- Seção do Contador --- */
+.counters {
+  padding: 3em 2em;
+  background: #28a746;
+  color: #fff;
+  text-align: center;
+}
+
+.counters > div {
+  max-width: 900px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 4em 2em;
+}
+
+.counter {
+  position: relative;
+}
+
+.counter h1 {
+  font-size: 3em;
+  margin-bottom: 0.5em;
+}
+
+.counter h3 {
+  color: black;
+}
+
+.counter:not(:last-child)::before {
+  content: '';
+  background: #fff;
+  position: absolute;
+  width: 2px;
+  height: 2em;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -1em;
+}
+
+@media screen and (max-width: 900px) and (min-width: 501px) {
+  .counters > div {
+    grid-template-columns: 1fr 1fr;
+  }
+  .counter:nth-child(2)::before {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .counters > div {
+    grid-template-columns: 1fr;
+    row-gap: 5em;
+  }
+  .counter:not(:last-child)::before {
+    width: 90%;
+    height: 2px;
+    top: initial;
+    right: initial;
+    bottom: -3em;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+/* --- Seção Portflólio */
+
+.area-portfolio {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  padding-left: 0rem;
+  padding-right: 0rem;
+  background-color: #343a40;
+}
+/* Estilizando o layout da grade */
+
+.custom-container .img-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.custom-container .img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.7s ease, filter 0.5s ease; /* Adicionando transição para a mudança de brilho */
+}
+.custom-container .img-container:hover img {
+  transform: scale(1.19); /* Aumenta em 10% */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.9);
+  filter: brightness(0.8); /* Diminui um pouco o brilho da imagem ao passar o mouse */
+}
+.custom-container .img-container span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 24px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.custom-container .img-container:hover span {
+  opacity: 1;
+}
+.custom-container .row > * {
+  max-width: 100%;
+  padding-right: calc(var(--bs-gutter-x) * 0);
+  padding-left: calc(var(--bs-gutter-x) * 0);
+  margin-top: var(--bs-gutter-y);
+}
+
+.img-text {
+  cursor: pointer; /* Altera o cursor para indicar que o texto é clicável */
+}
+
+.border-0 {
+  border-bottom: none !important; /* Remove a borda inferior do modal-header */
+  border-top: none !important;
+}
+
+/* --- Seção Depoimento --- */
+.blur-background {
+  position: relative;
+  background: url(https://images.unsplash.com/photo-1591442650671-e11240e00621?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+}
+
+.blur-background::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  filter: blur(90%); /* Ajuste o valor do desfoque conforme necessário */
+  z-index: -1;
+}
+
+.imagem-depoimento {
+  width: 40px;
+  height: 40px;
+  object-fit: cover; /* ou object-fit: contain; dependendo do efeito desejado */
+}
+
+/* --- Seção equipe ---  */
+/* Estilos personalizados para centralizar as imagens */
+
+.custom-container-equipe .img-container-equipe img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.7s ease, filter 0.7s ease; /* Adicionando transição para a mudança de brilho */
+}
+.custom-container-equipe .img-container-equipe:hover img {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
+  transition: transform 1.7s ease; /* Adicionando transição para a mudança de brilho */
+  filter: brightness(0.8); /* Diminui um pouco o brilho da imagem ao passar o mouse */
+}
+
+/* Seção Slider */
+.clients {
+  padding: 10px 0;
+}
+
+.clients .client-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.clients .client-logo img {
+  padding: 40px;
+  max-width: 80%;
+  transition: 0.3s;
+  opacity: 0.5;
+  filter: grayscale(100);
+}
+
+.clients .client-logo img:hover {
+  filter: none;
+  opacity: 1;
+}
+
+@media (max-width: 640px) {
+  .clients .client-logo img {
+    padding: 20px;
+  }
+}
+
+/* Seção Sobre */
+.center-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Seçäo Cultura */
+.container-cultura {
+  padding-left: 10rem;
+  padding-right: 10rem;
+}
+
+/* Seçao Por que Nós? */
+.feature-icon {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 0.75rem;
+}

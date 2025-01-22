@@ -1,0 +1,1005 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <!-- Adiciona o CSS do Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <!-- Adiciona os ícones do Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+    />
+  </head>
+  <body class="bg-dark">
+    <!-- Inicio da Barra de Navegação -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent bg- static-top fixed-top pt-5">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <!-- <img
+						src="https://placeholder.pics/svg/150x50/888888/EEE/Logo"
+						alt="..."
+						height="36"
+					/> -->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="36"
+            fill="currentColor"
+            class="bi bi-tree-fill"
+            viewBox="0 0 16 16"
+            style="padding-right: 1rem"
+          >
+            <path
+              d="M8.416.223a.5.5 0 0 0-.832 0l-3 4.5A.5.5 0 0 0 5 5.5h.098L3.076 8.735A.5.5 0 0 0 3.5 9.5h.191l-1.638 3.276a.5.5 0 0 0 .447.724H7V16h2v-2.5h4.5a.5.5 0 0 0 .447-.724L12.31 9.5h.191a.5.5 0 0 0 .424-.765L10.902 5.5H11a.5.5 0 0 0 .416-.777z"
+            />
+          </svg>
+          Agency Audiovisual
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#servicos">Serviços</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Portfólio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contato">Contato</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Fim da Barra de Navegação -->
+
+    <!-- Vídeo Header -->
+    <header>
+      <!-- Este div é intencionalmente vazio. Ele cria uma sobreposição preta transparente sobre o vídeo, que pode ser modificada no CSS -->
+      <div class="overlay"></div>
+
+      <!-- Elemento de vídeo HTML5 para o vídeo de fundo no cabeçalho -->
+      <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+        <source src="assets/videofundo.mp4" type="video/mp4" />
+      </video>
+
+      <!-- Conteúdo do cabeçalho -->
+      <div class="container h-100">
+        <div class="d-flex h-100 text-start align-items-center pb-5">
+          <div class="w-100 text-white">
+            <h1 class="display-1 fw-bold text-success pb-2">Seja Agency!</h1>
+            <p class="lead pb-1">Criamos, produzimos, transformamos!</p>
+            <a
+              href="https://wa.me/5519999415440?text=Olá, tudo bem? Cheguei através do site da Agency e fiquei interessado(a). Poderia me ajudar?"
+              class="btn btn-outline-success"
+              target="_blank"
+            >
+              <b>Fale conosco!</b>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Fim do Vídeo Header -->
+
+    <!-- Seção Sobre Nós -->
+    <div class="container py-5">
+      <div class="row align-items-center g-5 py-5">
+        <div class="col-lg-6 text-center">
+          <h1 class="display-4 fw-bold text-success lh-1 pb-4">Sobre nós</h1>
+          <p class="lead fs-5 text-white">
+            A Agency surgiu em meio ao caos de 2020, somos uma produtora audiovisual com a missão de
+            narrar histórias através de uma lente única. Nosso trabalho abrange uma gama completa de
+            soluções audiovisuais e tratamos cada projeto como um organismo vivo.
+          </p>
+          <p class="lead fs-5 text-white">
+            Nossa abordagem é personalizada, fundindo a essência de nossos clientes com a nossa, em
+            busca de resultados que causem impacto.
+            <br />A Agency está viva e a nossa cultura está crescendo.
+          </p>
+
+          <div class="d-grid gap-2 d-md-flex justify-content-md-start"></div>
+        </div>
+        <div class="col-lg-6 text-center">
+          <img
+            src="https://images.unsplash.com/photo-1600353771864-06224b16e1a3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            class="d-block mx-auto img-fluid ps-3"
+            alt="Bootstrap Themes"
+            width="700"
+            height="500"
+            loading="lazy"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Seção O que fazemos -->
+    <div class="container px-4 py-5" id="servicos">
+      <div class="row align-items-center g-5 py-5">
+        <div class="col-lg-6">
+          <h1 class="display-4 fw-bold text-success">O que fazemos?</h1>
+          <p class="text-white py-3 fs-5 lead">
+            Na Agency, trabalhamos de ponta a ponta em nossas produções, garantindo que nossa
+            essência esteja alinhada às necessidades de nossos clientes.
+          </p>
+          <p class="text-white fs-4"><strong>Pré-produção:</strong></p>
+          <ul class="text-white lead">
+            <li>Desenvolvemos storyboard, briefing e alinhamos expectativas.</li>
+            <li>Construímos conceito criativo e elaboramos roteiros.</li>
+            <li>Geração de narrações e realização de gravações.</li>
+            <li>Contratamos locações de equipamentos e estúdios.</li>
+          </ul>
+          <p class="text-white fs-4"><strong>Produção:</strong></p>
+          <ul class="text-white lead">
+            <li>Realizamos filmagem, edição, motion graphics e animação.</li>
+          </ul>
+          <p class="text-white fs-4"><strong>Pós-produção:</strong></p>
+          <ul class="text-white fs-5 lead">
+            <li>
+              Efetuamos finalizações, ajustes de cor, sonorização e entregas em múltiplos formatos.
+            </li>
+          </ul>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-start"></div>
+        </div>
+        <div class="col-lg-6">
+          <div class="overflow-hidden rounded-lg-5" style="width: 100%; max-width: 425px">
+            <video
+              class="rounded-lg-5 px-4"
+              controls
+              autoplay
+              muted
+              loop
+              preload="auto"
+              style="width: 100%; height: auto"
+            >
+              <source
+                src="/assets/Snapinsta.app_video_894783A89E6F6AE6B4B00DF69F7152B5_video_dashinit.mp4"
+                type="video/mp4"
+              />
+              Seu navegador não suporta o elemento de vídeo.
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--  Por que nos escolher -->
+    <div class="container-fluid py-5">
+      <div class="container py-4">
+        <h1 class="display-3 fw-bold text-success pb-5 pt-5 text-center">Por que nos escolher?</h1>
+        <div class="row g-4 py-5">
+          <div class="col-md-6 px-lg-5 px-3">
+            <div class="row g-5 row-cols-1">
+              <div class="feature col">
+                <div
+                  class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-success fs-2 mb-3"
+                >
+                  <i class="bi bi-star-fill"></i>
+                </div>
+                <h3 class="fs-2 text-success pb-2 fw-bold">Qualidade</h3>
+                <p class="text-white fs-5 lead">
+                  Nossas produções audiovisuais são projetadas para fortalecer a marca de nossos
+                  clientes, impulsionar seus produtos e encantar seus consumidores, marcando
+                  presença no mercado.
+                </p>
+              </div>
+              <div class="feature col">
+                <div
+                  class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-success bg-gradient fs-2 mb-3"
+                >
+                  <i class="bi bi-tools"></i>
+                </div>
+                <h3 class="fs-2 text-success pb-2 fw-bold">Experiência</h3>
+                <p class="text-white fs-5 lead">
+                  Com uma equipe experiente e especializada, já atuamos em diversos setores do
+                  mercado, sempre focados em atender às necessidades de nossos clientes, seja para
+                  criação de conteúdo promocional, institucional ou de marketing.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 px-lg-5 px-3">
+            <div class="row g-5 row-cols-1">
+              <div class="feature col">
+                <div
+                  class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-success bg-gradient fs-2 mb-3"
+                >
+                  <i class="bi bi-check-lg text-white"></i>
+                </div>
+                <h3 class="fs-2 text-success pb-2 fw-bold">Sob Medida</h3>
+                <p class="text-white fs-5 lead">
+                  Adaptamos nossos serviços de acordo com as necessidades individuais de cada
+                  cliente, proporcionando soluções personalizadas que se alinham perfeitamente às
+                  suas estratégias de negócios.
+                </p>
+              </div>
+              <div class="feature col">
+                <div
+                  class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-success bg-gradient fs-2 mb-3"
+                >
+                  <i class="bi bi-person-heart"></i>
+                </div>
+                <h3 class="fs-2 text-success pb-2 fw-bold">Parceria</h3>
+                <p class="text-white fs-5 lead">
+                  Estabelecemos uma parceria sólida e transparente, garantindo uma comunicação
+                  clara, entregas pontuais e um serviço de alta qualidade em todas as etapas do
+                  processo.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cultura -->
+    <section class="bg-dark py-5 px-3">
+      <div class="container">
+        <div class="text-start">
+          <h1 class="display-3 fw-bold text-success py-3">Cultura</h1>
+          <p class="lead text-white pb-4 fs-5 lead">
+            Somos verdadeiros amantes da arte do cinema e incorporamos essa paixão em nosso
+            trabalho. Nossos projetos têm uma abordagem cinematográfica, enraizada em nossa bagagem
+            cultural, e estamos constantemente buscando aprimorá-la. O nosso objetivo é transmitir
+            essa paixão em cada cena capturada. Sabemos do tamanho dos desafios envolvidos, mas é
+            esse processo criativo que nos move.
+          </p>
+        </div>
+        <div class="row row-cols-1 row-cols-lg-3 g-4">
+          <div class="col px-md-3">
+            <div class="card bg-dark text-white h-100">
+              <img
+                src="https://images.unsplash.com/photo-1601506521937-0121a7fc2a6b?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                class="card-img-top"
+                alt="Proximidade"
+              />
+              <div class="card-body">
+                <h3 class="card-title text-success fw-bold">Proximidade</h3>
+                <p class="card-text">
+                  Transformamos as necessidades dos nossos clientes em narrativas visuais únicas,
+                  integrando a nossa essência e expertise criativa.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col px-md-3">
+            <div class="card bg-dark text-white h-100">
+              <img
+                src="https://plus.unsplash.com/premium_photo-1682146720153-4d5bdf56f143?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                class="card-img-top"
+                alt="Criatividade"
+              />
+              <div class="card-body">
+                <h3 class="card-title text-success fw-bold">Criatividade</h3>
+                <p class="card-text">
+                  Transformamos as necessidades dos nossos clientes em narrativas visuais únicas,
+                  integrando a nossa essência e expertise criativa.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col px-md-3">
+            <div class="card bg-dark text-white h-100">
+              <img
+                src="https://images.unsplash.com/photo-1569620978599-3f158f7df4d9?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                class="card-img-top"
+                alt="Atendimento"
+              />
+              <div class="card-body">
+                <h3 class="card-title text-success fw-bold">Atendimento</h3>
+                <p class="card-text">Cultivamos uma relação de confiança e parceria.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Início da Seção Projetos -->
+    <div class="container-fluid custom-container bg-dark" id="portfolio">
+      <h1 class="display-3 fw-bold text-success text-center lh-1 pb-3 pt-5">Portfólio</h1>
+      <h3 class="lead fs-5 lh-1 text-center pb-5 text-light">Projetos certificados pela Agency!</h3>
+      <div class="row">
+        <div class="col-md-4 col-sm-6">
+          <div class="img-container">
+            <img
+              src="https://images.unsplash.com/photo-1495764506633-93d4dfed7c6b?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Imagem 1"
+            />
+            <span class="img-text" data-bs-toggle="modal" data-bs-target="#modal1"
+              >Titulo da Imagem 1</span
+            >
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="img-container">
+            <img
+              src="https://images.unsplash.com/photo-1545861163-d75d945d8dd5?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Imagem 2"
+            />
+            <span class="img-text" data-bs-toggle="modal" data-bs-target="#modal2"
+              >Titulo da Imagem 2</span
+            >
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="img-container">
+            <img
+              src="https://images.unsplash.com/photo-1569074187119-c87815b476da?q=80&w=1925&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Imagem 3"
+            />
+            <span class="img-text" data-bs-toggle="modal" data-bs-target="#modal3"
+              >Titulo da Imagem 3</span
+            >
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="img-container">
+            <img
+              src="https://images.unsplash.com/photo-1709541025863-5d240b0a13cc?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Imagem 4"
+            />
+            <span class="img-text" data-bs-toggle="modal" data-bs-target="#modal4"
+              >Titulo da Imagem 4</span
+            >
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="img-container">
+            <img
+              src="https://images.unsplash.com/flagged/photo-1554042329-269abab49dc9?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Imagem 5"
+            />
+            <span class="img-text" data-bs-toggle="modal" data-bs-target="#modal5"
+              >Titulo da Imagem 5</span
+            >
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="img-container">
+            <img
+              src="https://images.unsplash.com/photo-1709541027978-7af5ecf17e87?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Imagem 6"
+            />
+            <span class="img-text" data-bs-toggle="modal" data-bs-target="#modal6"
+              >Titulo da Imagem 6</span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 1 -->
+    <div
+      class="modal fade"
+      id="modal1"
+      tabindex="-1"
+      aria-labelledby="modal6Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content bg-dark">
+          <div class="modal-header border-0">
+            <h5 class="display-3 fw-bold text-success pb-3 pt-3 text-center" id="modal6Label">
+              Projeto Um
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body text-white">
+            <div style="max-width: 100%; max-height: 100%">
+              <iframe
+                style="width: 100%; height: 400px"
+                class="embed-responsive-item pb-4"
+                src="https://www.youtube.com/embed/KRyWx7Rs1wI?si=IMPBhNJMQqRAifU6"
+                title="YouTube video player"
+                frameborder="1"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="row gx-5">
+              <div class="col-lg-6">
+                <img
+                  src="https://dummyimage.com/600x400/343a40/6c757d"
+                  alt="..."
+                  class="img-fluid rounded-3 mb-5"
+                />
+              </div>
+              <div class="col-lg-6">
+                <img
+                  src="https://dummyimage.com/600x400/343a40/6c757d"
+                  alt="..."
+                  class="img-fluid rounded-3 mb-5"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="modal-footer border-0 mb-4">
+            <p class="lead fw-normal text-white">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam deserunt architecto
+              enim eos accusantium fugit recusandae illo iste dignissimos possimus facere ducimus
+              odit voluptatibus exercitationem, ex laudantium illum voluptatum corporis.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div
+      class="modal fade"
+      id="modal2"
+      tabindex="-1"
+      aria-labelledby="modal6Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content bg-dark">
+          <div class="modal-header border-0">
+            <h5 class="display-3 fw-bold text-success pb-3 pt-3 text-center" id="modal6Label">
+              Projeto Dois
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body text-white">
+            <div style="max-width: 100%; max-height: 100%">
+              <iframe
+                style="width: 100%; height: 400px"
+                class="embed-responsive-item pb-4"
+                src="https://www.youtube.com/embed/KRyWx7Rs1wI?si=IMPBhNJMQqRAifU6"
+                title="YouTube video player"
+                frameborder="1"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="row gx-5">
+              <div class="col-lg-6">
+                <img
+                  src="https://dummyimage.com/600x400/343a40/6c757d"
+                  alt="..."
+                  class="img-fluid rounded-3 mb-5"
+                />
+              </div>
+              <div class="col-lg-6">
+                <img
+                  src="https://dummyimage.com/600x400/343a40/6c757d"
+                  alt="..."
+                  class="img-fluid rounded-3 mb-5"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="modal-footer border-0 mb-4">
+            <p class="lead fw-normal text-white">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam deserunt architecto
+              enim eos accusantium fugit recusandae illo iste dignissimos possimus facere ducimus
+              odit voluptatibus exercitationem, ex laudantium illum voluptatum corporis.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div
+      class="modal fade"
+      id="modal3"
+      tabindex="-1"
+      aria-labelledby="modal6Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content bg-dark">
+          <div class="modal-header border-0">
+            <h5 class="display-3 fw-bold text-success pb-3 pt-3 text-center" id="modal6Label">
+              Projeto Tres
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body text-white">
+            <div style="max-width: 100%; max-height: 100%">
+              <iframe
+                style="width: 100%; height: 400px"
+                class="embed-responsive-item pb-4"
+                src="https://www.youtube.com/embed/KRyWx7Rs1wI?si=IMPBhNJMQqRAifU6"
+                title="YouTube video player"
+                frameborder="1"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="row gx-5">
+              <div class="col-lg-6">
+                <img
+                  src="https://dummyimage.com/600x400/343a40/6c757d"
+                  alt="..."
+                  class="img-fluid rounded-3 mb-5"
+                />
+              </div>
+              <div class="col-lg-6">
+                <img
+                  src="https://dummyimage.com/600x400/343a40/6c757d"
+                  alt="..."
+                  class="img-fluid rounded-3 mb-5"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="modal-footer border-0 mb-4">
+            <p class="lead fw-normal text-white">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam deserunt architecto
+              enim eos accusantium fugit recusandae illo iste dignissimos possimus facere ducimus
+              odit voluptatibus exercitationem, ex laudantium illum voluptatum corporis.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 4 -->
+    <div
+      class="modal fade"
+      id="modal4"
+      tabindex="-1"
+      aria-labelledby="modal6Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content bg-dark">
+          <div class="modal-header border-0">
+            <h5 class="display-3 fw-bold text-success pb-3 pt-3 text-center" id="modal6Label">
+              Projeto Quatro
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body text-white">
+            <div style="max-width: 100%; max-height: 100%">
+              <iframe
+                style="width: 100%; height: 400px"
+                class="embed-responsive-item pb-4"
+                src="https://www.youtube.com/embed/KRyWx7Rs1wI?si=IMPBhNJMQqRAifU6"
+                title="YouTube video player"
+                frameborder="1"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="row gx-5">
+              <div class="col-lg-6">
+                <img
+                  src="https://dummyimage.com/600x400/343a40/6c757d"
+                  alt="..."
+                  class="img-fluid rounded-3 mb-5"
+                />
+              </div>
+              <div class="col-lg-6">
+                <img
+                  src="https://dummyimage.com/600x400/343a40/6c757d"
+                  alt="..."
+                  class="img-fluid rounded-3 mb-5"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="modal-footer border-0 mb-4">
+            <p class="lead fw-normal text-white">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam deserunt architecto
+              enim eos accusantium fugit recusandae illo iste dignissimos possimus facere ducimus
+              odit voluptatibus exercitationem, ex laudantium illum voluptatum corporis.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 5 -->
+    <div
+      class="modal fade"
+      id="modal5"
+      tabindex="-1"
+      aria-labelledby="modal6Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content bg-dark">
+          <div class="modal-header border-0">
+            <h5 class="display-3 fw-bold text-success pb-3 pt-3 text-center" id="modal6Label">
+              Projeto Cinco
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body text-white">
+            <div style="max-width: 100%; max-height: 100%">
+              <iframe
+                style="width: 100%; height: 400px"
+                class="embed-responsive-item pb-4"
+                src="https://www.youtube.com/embed/KRyWx7Rs1wI?si=IMPBhNJMQqRAifU6"
+                title="YouTube video player"
+                frameborder="1"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="row gx-5">
+              <div class="col-lg-6">
+                <img
+                  src="https://dummyimage.com/600x400/343a40/6c757d"
+                  alt="..."
+                  class="img-fluid rounded-3 mb-5"
+                />
+              </div>
+              <div class="col-lg-6">
+                <img
+                  src="https://dummyimage.com/600x400/343a40/6c757d"
+                  alt="..."
+                  class="img-fluid rounded-3 mb-5"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="modal-footer border-0 mb-4">
+            <p class="lead fw-normal text-white">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam deserunt architecto
+              enim eos accusantium fugit recusandae illo iste dignissimos possimus facere ducimus
+              odit voluptatibus exercitationem, ex laudantium illum voluptatum corporis.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 6 -->
+    <div
+      class="modal fade"
+      id="modal6"
+      tabindex="-1"
+      aria-labelledby="modal6Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content bg-dark">
+          <div class="modal-header border-0">
+            <h5 class="display-3 fw-bold text-success pb-3 pt-3 text-center" id="modal6Label">
+              Projeto Seis
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body text-white">
+            <div style="max-width: 100%; max-height: 100%">
+              <iframe
+                style="width: 100%; height: 400px"
+                class="embed-responsive-item pb-4"
+                src="https://www.youtube.com/embed/KRyWx7Rs1wI?si=IMPBhNJMQqRAifU6"
+                title="YouTube video player"
+                frameborder="1"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="row gx-5">
+              <div class="col-lg-6">
+                <img
+                  src="https://dummyimage.com/600x400/343a40/6c757d"
+                  alt="..."
+                  class="img-fluid rounded-3 mb-5"
+                />
+              </div>
+              <div class="col-lg-6">
+                <img
+                  src="https://dummyimage.com/600x400/343a40/6c757d"
+                  alt="..."
+                  class="img-fluid rounded-3 mb-5"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="modal-footer border-0 mb-4">
+            <p class="lead fw-normal text-white">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam deserunt architecto
+              enim eos accusantium fugit recusandae illo iste dignissimos possimus facere ducimus
+              odit voluptatibus exercitationem, ex laudantium illum voluptatum corporis.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Início do Contador -->
+    <div style="min-height: 13em">
+      <div class="counters bg-success">
+        <h1 class="display-3 fw-bold text-white text-center lh-1 pb-5 pb-0">Números</h1>
+        <div>
+          <div class="counter">
+            <h1><span data-count="46">0</span></h1>
+            <h3>Clientes</h3>
+          </div>
+          <div class="counter">
+            <h1><span data-count="10">0</span></h1>
+            <h3>Cidades</h3>
+          </div>
+          <div class="counter">
+            <h1><span data-count="3800" class="fast">0</span>h</h1>
+            <h3>Pré Produção</h3>
+          </div>
+          <div class="counter">
+            <h1><span data-count="229">0</span></h1>
+            <h3>Vídeos</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Fim do Contador -->
+
+    <!-- Seção Clientes -->
+    <div class="container-fluid py-5 bg-dark text-center">
+      <h1 class="display-3 fw-bold text-success pt-3 pb-5">Clientes</h1>
+
+      <div id="client-slider" class="carousel slide py-1" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row align-items-center justify-content-center clients">
+              <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center client-logo">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Subway_2016_logo.svg/1280px-Subway_2016_logo.svg.png"
+                  alt="Company Logo"
+                />
+              </div>
+              <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center client-logo">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Volkswagen_Logo_till_1995.svg/2048px-Volkswagen_Logo_till_1995.svg.png"
+                  alt="Company Logo"
+                />
+              </div>
+              <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center client-logo">
+                <img src="assets/fiat.png" alt="Company Logo" />
+              </div>
+              <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center client-logo">
+                <img
+                  src="https://logodownload.org/wp-content/uploads/2015/02/burger-king-logo-6.png"
+                  alt="Company Logo"
+                />
+              </div>
+              <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center client-logo">
+                <img
+                  src="https://static.vecteezy.com/system/resources/previews/022/636/386/non_2x/starbucks-logo-starbucks-icon-transparent-free-png.png"
+                  alt="Company Logo"
+                />
+              </div>
+              <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center client-logo">
+                <img src="https://logopng.com.br/logos/mcdonalds-90.png" class="client-logo" />
+              </div>
+              <!-- Adicione mais logos conforme necessário -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Seção Equipe -->
+    <div class="container-fluid custom-container-equipe bg-success py-5">
+      <h1 class="display-3 fw-bold text-black text-center lh-1">Equipe</h1>
+      <h3 class="lead fs-4 lh-1 text-center pb-5 pt-4 text-white">Conheça a equipe Agency</h3>
+      <div class="row justify-content-center">
+        <!-- Caio Lima -->
+        <div class="col-12 col-sm-6 col-md-6 col-lg-4 mb-5">
+          <div class="text-center">
+            <h2 class="fs-2 text-black fw-bold mb-3">Caio Lima</h2>
+            <div class="img-container-equipe">
+              <img
+                src="assets/fundador - 1.jpg"
+                alt="Imagem Sérgio Abdala"
+                class="img-fluid w-auto"
+                style="max-width: 500px"
+              />
+              <h3 class="lead fs-5 lh-sm text-white mt-3">
+                FUNDADOR | ROTEIRISTA & DIRETOR | EDITOR SÊNIOR
+              </h3>
+            </div>
+          </div>
+        </div>
+
+        <!-- Jorge Lima -->
+        <div class="col-12 col-sm-6 col-md-6 col-lg-4 mb-5">
+          <div class="text-center">
+            <h2 class="fs-2 text-black fw-bold mb-3">Jorge Lima</h2>
+            <div class="img-container-equipe">
+              <img
+                src="assets/fundador - 2.jpg"
+                alt="Imagem Caio Abdala"
+                class="img-fluid w-auto"
+                style="max-width: 500px"
+              />
+              <h3 class="lead fs-5 lh-sm text-white mt-3">"THE BOSS" | PRODUTOR EXECUTIVO</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Seçäo Formulário -->
+    <div class="container py-5" id="contato">
+      <div class="row align-items-center g-lg-5 py-5">
+        <div class="col-lg-7 text-center text-lg-start">
+          <h1 class="display-4 fw-bold lh-1 text-success mb-3">Precisa de ajuda? <br /></h1>
+          <p class="col-lg-10 fs-4 text-white pt-4">
+            Conte com nossa equipe para esclarecer dúvidas, solicitar informações adicionais,
+            discutir projetos ou fornecer assistência personalizada e orientação especializada.
+            Venha ser Agency!
+          </p>
+        </div>
+        <div class="col-md-10 mx-auto col-lg-5">
+          <form
+            class="p-4 p-md-5 rounded-3 bg-dark borda-card"
+            action="https://formsubmit.co/yurifrancogoncalves@gmail.com"
+            method="post"
+            target="_blank"
+          >
+            <div class="form-floating mb-3">
+              <input
+                type="email"
+                class="form-control"
+                id="inputEmail"
+                placeholder="name@example.com"
+                name="email"
+                required
+              />
+              <label for="inputEmail">Email</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input
+                type="tel"
+                class="form-control"
+                id="inputPhone"
+                placeholder="Phone number"
+                name="telefone"
+                required
+              />
+              <label for="inputPhone">Telefone</label>
+            </div>
+            <div class="form-floating mb-3">
+              <textarea
+                class="form-control"
+                id="inputComment"
+                placeholder="Your comment"
+                style="height: 150px"
+                name="comentario"
+              ></textarea>
+              <label for="inputComment">Comentário</label>
+            </div>
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_next" value="http://127.0.0.1:5500/confirmacaoemail.html" />
+
+            <button class="w-100 btn btn-lg btn-success" type="submit">Enviar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Seçáo Call to Action -->
+    <div class="container">
+      <aside class="bg-success bg-gradient rounded-3 p-4 p-sm-5 mt-3 mb-5">
+        <div
+          class="d-flex align-items-center justify-content-between flex-column flex-xl-row text-center text-xl-start"
+        >
+          <div class="mb-4 mb-xl-0">
+            <h2 class="fs-1 fw-bold text-white">Agende uma reunião conosco!</h2>
+          </div>
+          <div class="ms-xl-4">
+            <a
+              href="https://wa.me/55199?text=Olá, tudo bem? Cheguei através do site da Agency e fiquei interessado(a). Poderia me ajudar?"
+              class="btn btn-outline-light"
+              target="_blank"
+              >Entre em contato</a
+            >
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <!-- Seção Footer -->
+    <div class="container">
+      <footer
+        class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+      >
+        <div class="col-md-4 d-flex align-items-center">
+          <a href="/" class="mb-3 me-2 mb-md-0 text-white text-white lh-1">
+            <i class="bi bi-tree-fill fs-3"></i>
+          </a>
+          <span class="mb-3 mb-md-0 text-white">© 2024 Agency, Inc</span>
+        </div>
+
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+          <li class="ms-3">
+            <a class="text-body-secondary" href="#" target="_blank">
+              <i class="bi bi-youtube fs-3 text-white"></i>
+            </a>
+          </li>
+          <li class="ms-3">
+            <a class="text-white" href="#" target="_blank">
+              <i class="bi bi-instagram fs-3"></i>
+            </a>
+          </li>
+          <li class="ms-3">
+            <a class="text-white" href="#" target="_blank">
+              <i class="bi bi-behance fs-3"></i>
+            </a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+
+    <!-- Bootstrap JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
